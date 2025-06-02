@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เลือกแบบฟอร์ม NCR</title>
+  <style>
+    :root {
+      --primary: #1d4784;
+      --accent: #00c853;
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --text: #333333;
+      --border: #dddddd;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--primary);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+    .card img {
+  width: 100%;
+  height: 570px;       /* หรือกำหนดความสูงตามที่ต้องการ */
+  object-fit: fill;    /* บีบภาพให้เต็มทั้งความกว้างและความสูงของกรอบ */
+  display: block;
+}
+
+    .card-content {
+      padding: 16px;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .card-content h2 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .btn-select {
+      background-color: var(--accent);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      text-decoration: none;
+    }
+    .btn-select:hover {
+      background-color: #009e44;
+    }
+    @media (max-width: 480px) {
+      .card-content h2 {
+        font-size: 1rem;
+      }
+      .btn-select {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>เลือกแบบฟอร์ม NCR</h1>
+
+  <div class="grid">
+    <!-- ฟอร์มที่ 1 -->
+    <div class="card">
+      <img src="flex%201.png" alt="Mockup ฟอร์มที่ 1" />
+      <div class="card-content">
+        <h2>ฟอร์มแบบที่ 1</h2>
+        <a href="https://rapeewat.github.io/Ncr/ncr_form_mockup" class="btn-select">ใช้ฟอร์มนี้</a>
+      </div>
+    </div>
+
+    <!-- ฟอร์มที่ 2 -->
+    <div class="card">
+      <img src="flex%202.png" alt="Mockup ฟอร์มที่ 2" />
+      <div class="card-content">
+        <h2>ฟอร์มแบบที่ 2</h2>
+        <a href="https://rapeewat.github.io/Ncr/ncr_form_mockup" class="btn-select">ใช้ฟอร์มนี้</a>
+      </div>
+    </div>
+
+    <!-- ฟอร์มที่ 3 -->
+    <div class="card">
+      <img src="flex%203.png" alt="Mockup ฟอร์มที่ 3" />
+      <div class="card-content">
+        <h2>ฟอร์มแบบที่ 3</h2>
+        <a href="https://rapeewat.github.io/Ncr/ncr_form_mockup" class="btn-select">ใช้ฟอร์มนี้</a>
+      </div>
+    </div>
+
+    <!-- ฟอร์มที่ 4 -->
+    <div class="card">
+      <img src="flex%204.png" alt="Mockup ฟอร์มที่ 4" />
+      <div class="card-content">
+        <h2>ฟอร์มแบบที่ 4</h2>
+        <a href="https://rapeewat.github.io/Ncr/ncr_form_mockup" class="btn-select">ใช้ฟอร์มนี้</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
